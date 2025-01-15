@@ -24,7 +24,7 @@ public class Main {
 
         try {
             Properties properties = new Properties();
-            FileInputStream configFile = new FileInputStream("config.properties");
+            FileInputStream configFile = new FileInputStream("C:\\Users\\LENOVO\\Desktop\\CurrencyConverter\\CurrencyConcerter\\src\\main\\resources\\config.properties");
             properties.load(configFile);
             configFile.close();
 
@@ -51,7 +51,7 @@ public class Main {
             }
             else {
                 double convertQuota = quota * exchangeRate;
-                System.out.println("Result: %.2f %s%n" + convertQuota + toCurrency);
+                System.out.println("Result: " + convertQuota + " " + toCurrency);
             }
         } catch (IOException e) {
             throw new RuntimeException(e.getMessage());
